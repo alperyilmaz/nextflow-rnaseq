@@ -1,2 +1,3 @@
 # nextflow-rnaseq
-amazon aws batch implementation of nextflow/rnaseq-encode-nf tutorial
+
+Amazon aws batch implementation of nextflow/rnaseq-encode-nf tutorial
