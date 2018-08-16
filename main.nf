@@ -96,7 +96,7 @@ process parseEncode {
                 if file_type == "fastq" and seq_type == "paired-ended":
                     if not dbxref in sra:
                         sra_id = dbxref.split("SRR")[1]
-                        url = "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/{0}/".format(dbxref[0:6])
+                        url = "http://ftp.sra.ebi.ac.uk/vol1/fastq/{0}/".format(dbxref[0:6])
                         if len(sra_id) == 6: url += "{0}".format(dbxref)
                         if len(sra_id) == 7: url += "00{0}/{1}".format(sra_id[-1],dbxref)
                         if len(sra_id) == 8: url += "0{0}/{1}".format(sra_id[-2:-1],dbxref)
